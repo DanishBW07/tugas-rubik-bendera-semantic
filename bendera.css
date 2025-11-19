@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: #f5f5f5;
+  color: #222;
+}
+
+.bungkus {
+  width: 100%;
+  padding: 20px;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 24px;
+}
+
+.deretan-bendera {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-left: 40px;
+}
+
+.bendera {
+  width: 320px;
+  height: 190px;
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #bbb;
+  flex-shrink: 0;
+}
+
+.tulisan-bendera {
+  position: absolute;
+  bottom: 8px;
+  left: 10px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.bendera--jepang {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.matahari {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #d32;
+}
+
+.bendera--indonesia {
+  background: linear-gradient(#d33 50%, #fff 50%);
+}
+
+.bendera--georgia {
+  background: #fff;
+}
+
+.salib-vertikal {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 28%;
+  height: 100%;
+  background: #c00;
+}
+
+.salib-horizontal {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 28%;
+  background: #c00;
+}
+
+.salib-kecil {
+  position: absolute;
+  width: 18%;
+  height: 18%;
+  display: grid;
+  place-items: center;
+}
+
+.salib-kecil::before,
+.salib-kecil::after {
+  content: '';
+  position: absolute;
+  background: #c00;
+}
+
+.salib-kecil::before {
+  width: 60%;
+  height: 18%;
+}
+
+.salib-kecil::after {
+  height: 60%;
+  width: 18%;
+}
+
+.salib-kecil.posisi1 { left: 12%; top: 12%; }
+.salib-kecil.posisi2 { right: 12%; top: 12%; }
+.salib-kecil.posisi3 { left: 12%; bottom: 12%; }
+.salib-kecil.posisi4 { right: 12%; bottom: 12%; }

@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+  }
+  
+  .kakek {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+  }
+  
+  .bapak {
+    flex: 1;
+    display: flex;
+  }
+  
+  .anak {
+    flex: 1;
+    margin: 1;
+  }
+  
+  /* warna tiap baris */
+  .baris1 .anak {
+    background: red;
+  }
+  
+  .baris2 .anak {
+    background: rgb(0, 101, 155);
+  }
+  
+  .baris3 .anak {
+    background-color: green;
+  }
